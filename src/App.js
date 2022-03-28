@@ -10,6 +10,7 @@ import ClassForm from './pages/ClassForm'
 function App() {
   return (
     <>
+      <Main />
       <Router>
           <div className="container">
             <Header />
