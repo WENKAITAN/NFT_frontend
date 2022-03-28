@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard'
 function App() {
   return (
     <>
+      <Main />
       <Router>
           <div className="container">
             <Header />
