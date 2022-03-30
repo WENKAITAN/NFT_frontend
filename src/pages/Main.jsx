@@ -4,7 +4,6 @@ function Main() {
   
   return (
     <div>Main
-      <Header/>
       <div id='content'>
         <span id='text1'>
           <p>
