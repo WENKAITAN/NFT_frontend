@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from
 import Login from './pages/Login'
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard'
+
+// Emmanuel 03-36-2022
+import CourseDetail from './pages/CourseDetail'
+import Grade from'./pages/Grade'
 function App() {
   return (
     <>
@@ -11,7 +15,9 @@ function App() {
           <div className="container">
             <Header />
             <Routes>
-            <Route path='/' element={<Dashboard/>} />
+            {/* <Route path='/' element={<Dashboard/>} /> */}
+            {/* <Route path='/' element={<CourseDetail/>} /> */}
+            <Route path='/' element={<Grade />} />
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
           </Routes>
