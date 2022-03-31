@@ -4,9 +4,6 @@ import Profile from './Profile'
 function Dashboard() {
   return (
     <div>Dashboard
-      <Header>
-        <Profile>username</Profile>
-      </Header>     
       <div id='MyCourses'>
         <ul>
           <li>List of courses enrolled</li>
