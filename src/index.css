@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -208,63 +210,9 @@ h3 {
   .heading h1 {
     font-size: 2rem;
   }
-
+  
   .heading p {
     font-size: 1.5rem;
   }
-}
 
-#AnnouncementCardContainer {
-  border-radius: 25px;
-  border-bottom: 2px ridge;
-  height: 500px;
-  background-color: #eaeaea ;
-  width: 60%;
-
-}
-/* .ui card {
-  height: 100%;
-  width: 100%;
-} */
-
-#announcements, #mask, #todo, #grades {
-  text-align: center;
-  display: inline-flex;
-}
-
-#detailsContainer, #gradeContainer{
-  display:inline-flex;
-  height: 100%;
-  width: 100%;
-  justify-content:space-between;
-}
-
-#ToDoCardContainer {
-  height: 50%;
-  width: 250px;
-  border-radius: 25px;
-  border-bottom: 2px ridge;
-  background-color: #eaeaea ;
-}
-
-#ToMaskCardContainer {
-  height: 38%;
-  width: 250px;
-  border-radius: 25px;
-  border-bottom: 2px ridge;
-  background-color: #eaeaea ;
-}
-
-#gradeCardContainer {
-  border-radius: 25px;
-  border-bottom: 2px ridge;
-  height: 550px;
-  background-color: #eaeaea ;
-  width: 100%;
-}
-
-#organize {
-  text-align: left;
-  padding-left: 3%;
-  width: 100%;
 }
