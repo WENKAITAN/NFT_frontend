@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -208,8 +210,9 @@ h3 {
   .heading h1 {
     font-size: 2rem;
   }
-
+  
   .heading p {
     font-size: 1.5rem;
   }
+
 }

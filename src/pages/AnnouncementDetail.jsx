@@ -6,4 +6,5 @@ function AnnouncementDetail() {
   )
 }
 
+
 export default AnnouncementDetail
