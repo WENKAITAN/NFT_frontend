@@ -13,15 +13,7 @@ function Dashboard() {
     
 
   return (
-    <>
-    <section>
-      <div className='dashboard-header'>
-        <h1>
-        Dashboard
-        </h1>
-      </div>
-     <div className='box-container'>
-      <div className='MyCourses'>
+
         <ul>
           <li><h3>Courses</h3></li>
           <li>CMP 464 Software Engineering</li>

@@ -13,6 +13,7 @@ function Enroll() {
 
   const {firstName, middleName, lastName, email, studentId, chosenClass} = formData
   const handleChange = (e) => {
+    console.log(e.target, )
     setFormData({
         ...formData,
         [e.target.name]: e.target.value

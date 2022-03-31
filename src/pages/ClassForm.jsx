@@ -12,6 +12,7 @@ function ClassForm() {
     
       const {firstName, middleName, lastName, email, departmentName, className} = formData
       const handleChange = (e) => {
+        console.log(e.target)
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
