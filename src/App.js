@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from
 import Login from './pages/Login'
 
 
+
 function App() {
   return (
     <>
@@ -11,8 +12,7 @@ function App() {
           <div className="container">
             <Header />
             <Routes>
-            <Route path = '/homepage' element = {<Main/>}/>
-            <Route path='/' element={<Dashboard/>} />
+
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
             <Route path='/enroll' element={<Enroll/>} />

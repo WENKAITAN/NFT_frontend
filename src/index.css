@@ -214,33 +214,5 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
-  
-}
 
-.dashboard-header{
-  display:flexbox;
-  margin-bottom: 40px;
-  margin-top: 0px;
-  padding: 40px;
-  background-color: #e6e6e6;
-}
-.dashboard-header.h1{
-  
-}
-
-.Announcements{
-  display: inline-block;
-  margin-left: 30px;
-  padding: 90px;
-  background-color:#e6e6e6;
-  border: 10px solid #828282;
-}
-
-.MyCourses{
-  display: inline-block;
-  margin-right: 30px;
-  padding: 90px;
-  background-color:#e6e6e6;
-  border: 10px solid #828282;
- 
 }
