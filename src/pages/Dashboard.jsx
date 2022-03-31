@@ -13,14 +13,14 @@ function Dashboard() {
     
 
   return (
-
+    <>
+      <section className="heading">
         <ul>
           <li><h3>Courses</h3></li>
           <li>CMP 464 Software Engineering</li>
           <li>CMP 362 Programming 2</li>
           <li>CMP 405 Data Structures</li>
         </ul>
-      </div>
       <div className='Announcements'>
         <ul>
           <li><h3>Announcements</h3></li>
@@ -31,7 +31,6 @@ function Dashboard() {
           <li>{announcements}</li>
           <li>{announcements}</li>
         </ul>
-      </div>
       </div>
     </section>
     </>
