@@ -13,7 +13,8 @@ const GradeCardView = () => (
   <div id="gradeCardContainer" style={{ margin: 20}}>
     <Card>
       <Card.Content style={{ width: "100%"}}>
-        <Card.Header id="grades">Grades  Dashboard</Card.Header>
+        {/* There is no need to have the is seperate header because we have a gloal navbar */}
+        {/* <Card.Header id="grades">Grades  Dashboard</Card.Header> */}
         <div id="organize">
         <Card.Meta>
           <span className='total'>Total</span>
