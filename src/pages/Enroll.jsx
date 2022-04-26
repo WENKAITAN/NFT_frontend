@@ -41,6 +41,7 @@ function Enroll() {
       <section className="form">
           <form onSubmit={handleSubmit}>
               <div className="form-group">
+              <label for = "firstName">First name</label>
                   <input 
                       type="text" 
                       id="firstName" 
@@ -52,6 +53,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "middleName">Middle name</label>
                   <input 
                       type="text" 
                       id="middleName" 
@@ -63,6 +65,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "lastName">Last name</label>
                   <input 
                       type="text" 
                       id="lastName" 
@@ -74,6 +77,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "email">Email</label>
                   <input 
                       type="text" 
                       id="email" 
@@ -85,6 +89,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "studentId">Student ID</label>
                   <input 
                       type="text" 
                       id="studentId" 
@@ -96,6 +101,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "chosenClass">Choose Class</label>
                   <input 
                       type="text" 
                       id="chosenClass" 
@@ -106,6 +112,12 @@ function Enroll() {
                       onChange={handleChange}
                   />
               </div>
+              <div>
+                <label for = "upfile">Upload file:</label><br/>
+                <input type="file" id="upfile" name="upfile"></input>
+                
+             </div>
+             <br/> 
               <div className="form-group">
                   <button type="submit" className='btn btn-block'>Submit</button>
               </div>

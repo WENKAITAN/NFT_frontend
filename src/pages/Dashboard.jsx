@@ -3,14 +3,19 @@ import {useState, useEffect} from 'react'
 import '../index.css';
 function Dashboard() {
 
-    const[studentData,setStudentData] = useState({
+    const[announcements, setAnnouncements] = useState({
       announcements: '',
       courses:''
     })
-    const {announcements,courses} = studentData
 
-   
-    
+ /*  const changeAnnouncement = (e) =>
+   { e.preventDefault;
+     const {announcements} = this.useState;
+     const newAnnouncement = 'test';
+     setAnnouncements({
+       announcements:[...this.useState.announcements, newAnnouncement]
+     })
+    }*/
 
   return (
     <>
@@ -24,12 +29,9 @@ function Dashboard() {
       <div className='Announcements'>
         <ul>
           <li><h3>Announcements</h3></li>
-          <li>Announcement 1</li>
           <li>Announcement 2</li>
           <li>Announcement 3</li>
-          <li>{announcements}</li>
-          <li>{announcements}</li>
-          <li>{announcements}</li>
+          <li></li>
         </ul>
       </div>
     </section>
