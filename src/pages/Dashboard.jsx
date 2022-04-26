@@ -19,21 +19,13 @@ function Dashboard() {
 
   return (
     <>
-    <section>
-      <div className='dashboard-header'>
-        <h1>
-        Dashboard
-        </h1>
-      </div>
-     <div className='box-container'>
-      <div className='MyCourses'>
+      <section className="heading">
         <ul>
           <li><h3>Courses</h3></li>
           <li>CMP 464 Software Engineering</li>
           <li>CMP 362 Programming 2</li>
           <li>CMP 405 Data Structures</li>
         </ul>
-      </div>
       <div className='Announcements'>
         <ul>
           <li><h3>Announcements</h3></li>
@@ -42,7 +34,6 @@ function Dashboard() {
           <li value={announcements}
           onChange = {changeAnnouncement('test')}></li>
         </ul>
-      </div>
       </div>
     </section>
     </>
