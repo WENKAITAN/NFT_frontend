@@ -8,14 +8,14 @@ function Dashboard() {
       courses:''
     })
 
-   const changeAnnouncement = (e) =>
+ /*  const changeAnnouncement = (e) =>
    { e.preventDefault;
      const {announcements} = this.useState;
      const newAnnouncement = 'test';
      setAnnouncements({
        announcements:[...this.useState.announcements, newAnnouncement]
      })
-    }
+    }*/
 
   return (
     <>
@@ -31,8 +31,7 @@ function Dashboard() {
           <li><h3>Announcements</h3></li>
           <li>Announcement 2</li>
           <li>Announcement 3</li>
-          <li value={announcements}
-          onChange = {changeAnnouncement('test')}></li>
+          <li></li>
         </ul>
       </div>
     </section>
