@@ -1,0 +1,53 @@
+#projectsHeading {
+  position: relative;
+  left: 40%;
+}
+
+#projectContainer{
+  width: 50%;
+}
+
+#classHeadings {
+  text-align: center;
+  display: -webkit-inline-box;
+}
+
+#card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: -webkit-fill-available;
+  display: inline-flex;
+  padding: 1% 1% 1% 1%;
+  margin: 1% 1% 1% 1%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+#description{
+  padding-left: 20px;
+}
+
+#classImage{
+  width: 35%; 
+  height: 200px;
+}
+#cardContent{
+  border:none;
+}
+
+#buttonContainer {padding-top:100px;}
+.extra ::content{padding-top: 100px;}
+
+#buttonContainer .selectButton {
+  border-style: solid;
+  border-color: greenyellow;
+  background-color: red;
+}
+
+#card {
+  border: 1px solid #C4C4C4;
+  border-radius: 30px;
+  /* border-color: #C4C4C4; */
+}

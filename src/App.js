@@ -10,6 +10,8 @@ import Dashboard from './pages/Dashboard'
 import Grade from './pages/Grade'
 import AnnouncementDetail from './pages/AnnouncementDetail'
 import CourseDetail from './pages/CourseDetail'
+
+
 import StudentCenter from './pages/StudentCenter'
 import Profile from './pages/Profile'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -23,6 +25,7 @@ import RegisterClass from './pages/RegisterClass'
 import Tasks from './pages/Tasks'
 import Transcript from './pages/Transcript'
 import ScheduleBuilder from './pages/ScheduleBuilder'
+
 function App() {
   
   return (
@@ -54,7 +57,6 @@ function App() {
               <Route path='task' element={<Tasks/>} />
               <Route path='deposit' element={<DirectDeposit/>} />
             </Route>
-
           </Routes>
           </div>
       </Router>
