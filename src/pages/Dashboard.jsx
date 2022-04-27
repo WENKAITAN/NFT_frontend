@@ -7,6 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useNavigate} from 'react-router-dom'
 function Dashboard() {
 
+
   const [university, setUniversity] = useState(null)
   let navigate = useNavigate();
   const handleOnClick = (uniId) => {
@@ -17,6 +18,7 @@ function Dashboard() {
     window.location.href='/enroll'
   }
 
+
   const { isAuthenticated } = useAuth0();
   
   if(isAuthenticated){
@@ -26,6 +28,7 @@ function Dashboard() {
   return (
     <>
       <section className="heading">
+
         <h3>University</h3>
         <Container>
           <Row >
@@ -143,6 +146,22 @@ function Dashboard() {
             </Col>
           </Row>
         </Container>
+
+        <ul>
+          <li><h3>Courses</h3></li>
+          <li>CMP 464 Software Engineering</li>
+          <li>CMP 362 Programming 2</li>
+          <li>CMP 405 Data Structures</li>
+        </ul>
+      <div className='Announcements'>
+        <ul>
+          <li><h3>Announcements</h3></li>
+          <li>Announcement 2</li>
+          <li>Announcement 3</li>
+          <li></li>
+        </ul>
+      </div>
+
     </section>
     </>
   )
