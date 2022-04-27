@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 // Emmanuel 03-36-2022
 import CourseDetail from './pages/CourseDetail'
 import Grade from'./pages/Grade'
+import ClassSelection from './pages/ClassSelection'
 function App() {
   return (
     <>
@@ -17,10 +18,12 @@ function App() {
             <Routes>
             {/* <Route path='/' element={<Dashboard/>} /> */}
             {/* <Route path='/' element={<CourseDetail/>} /> */}
-            <Route path='/' element={<Grade />} />
+
+            {/* <Route path='/' element={<Grade />} />
             <Route path='/login' element={<Login/>} />
-            <Route path='/register' element={<Register/>} />
+            <Route path='/register' element={<Register/>} /> */}
           </Routes>
+          <ClassSelection />
           </div>
       </Router>
     </>
