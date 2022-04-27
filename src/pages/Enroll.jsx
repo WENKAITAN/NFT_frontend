@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { Button } from 'react-bootstrap';
 function Enroll() {
 
   const [formData, setFormData] = useState({
@@ -7,11 +7,10 @@ function Enroll() {
     middleName: '',
     lastName: '',
     email: '',
-    studentId: '',
-    chosenClass: ''
+    essay: '',
   })
 
-  const {firstName, middleName, lastName, email, studentId, chosenClass} = formData
+  const {firstName, middleName, lastName, email, essay} = formData
   const handleChange = (e) => {
     console.log(e.target, )
     setFormData({
@@ -41,6 +40,7 @@ function Enroll() {
       <section className="form">
           <form onSubmit={handleSubmit}>
               <div className="form-group">
+              <label for = "firstName">First name</label>
                   <input 
                       type="text" 
                       id="firstName" 
@@ -52,6 +52,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "middleName">Middle name</label>
                   <input 
                       type="text" 
                       id="middleName" 
@@ -63,6 +64,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "lastName">Last name</label>
                   <input 
                       type="text" 
                       id="lastName" 
@@ -74,6 +76,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
+              <label for = "email">Email</label>
                   <input 
                       type="text" 
                       id="email" 
@@ -85,29 +88,27 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
-                  <input 
-                      type="text" 
-                      id="studentId" 
-                      name="studentId" 
-                      value={studentId} 
-                      className="form-control" 
-                      placeholder="Enter your student Id"
-                      onChange={handleChange}
-                  />
+                <label for = "chosenClass">Essay</label>
+                <textarea 
+                    maxlength="1000" 
+                    rows="4"                       
+                    type="text" 
+                    id="essay" 
+                    name="essay" 
+                    value={essay} 
+                    className="form-control" 
+                    placeholder="Enter your application essay"
+                    onChange={handleChange}>
+                </textarea>
               </div>
+              <div>
+                <label for = "upfile">Upload file:</label><br/>
+                <input type="file" id="upfile" name="upfile"></input>
+                
+             </div>
+             <br/> 
               <div className="form-group">
-                  <input 
-                      type="text" 
-                      id="chosenClass" 
-                      name="chosenClass" 
-                      value={chosenClass} 
-                      className="form-control" 
-                      placeholder="Enter your class name"
-                      onChange={handleChange}
-                  />
-              </div>
-              <div className="form-group">
-                  <button type="submit" className='btn btn-block'>Submit</button>
+                  <Button type="submit" className='btn btn-block'>Submit</Button>
               </div>
           </form>
         </section>
