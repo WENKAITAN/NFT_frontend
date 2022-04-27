@@ -4,19 +4,21 @@ import { Button } from 'react-bootstrap'
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from './LogoutButton'
 import { MdAccountBox} from "react-icons/md";
+import { useNavigate} from 'react-router-dom'
 function Header() {
   const { user, isAuthenticated } = useAuth0();
+  const navigate = useNavigate()
   return (
     <header className='header'>
         <div className='logo'>
-            <h4 onClick={()=> window.location.href='/'}>MetaUniversity</h4>
+            <h4 onClick={()=> navigate('/')}>MetaUniversity</h4>
         </div>
 
         <ul>
 
             {isAuthenticated && user  ? (
                 <>
-                    <Button variant="secondary" size="lg" onClick={()=> window.location.href='/Profile'}><MdAccountBox/></Button>
+                    <Button variant="secondary" size="lg" onClick={()=> navigate('/Profile')}><MdAccountBox/></Button>
                     <LogoutButton/>
                 </>
             
