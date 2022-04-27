@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import '../index.css';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Cover from '../images/Cover.png'
@@ -9,6 +9,7 @@ function Dashboard() {
 
 
   const [university, setUniversity] = useState(null)
+  
   let navigate = useNavigate();
   const handleOnClick = (uniId) => {
     console.log(uniId)

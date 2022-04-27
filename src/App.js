@@ -40,7 +40,7 @@ function App() {
               <Route path="home" element={<Main />} />
               <Route path="grade" element={<Grade />} />
               <Route path="announcement" element={<AnnouncementDetail />} />
-              <Route path='register' element={<ClassSelection/>} />
+              <Route path='registerClass' element={<ClassSelection/>} />
               
               <Route path='create' element={<ClassForm/>} />
               <Route path='studentcenter'  element={<StudentCenter/>} />
