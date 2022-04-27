@@ -23,7 +23,7 @@ function Dashboard() {
   
   if(isAuthenticated){
 
-    window.location.href='/home'
+   navigate("/home")
   }
   return (
     <>
