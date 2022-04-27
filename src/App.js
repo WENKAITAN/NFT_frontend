@@ -51,7 +51,6 @@ function App() {
               <Route path='financialAid' element={<FinancialAid/>} />
               <Route path='graduate' element={<Graduation/>} />
               <Route path='scheduleBuilder' element={<ScheduleBuilder/>} />
-              <Route path='registerClass'  element={<RegisterClass/>} />
               <Route path='transcript' element={<Transcript/>} />
               <Route path='task' element={<Tasks/>} />
               <Route path='deposit' element={<DirectDeposit/>} />
