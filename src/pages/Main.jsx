@@ -3,7 +3,9 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 import { MdAccountCircle, MdAnnouncement, MdSchool } from "react-icons/md";
 import { useNavigate} from 'react-router-dom'
 function Main() {
+
   let navigate = useNavigate();
+
   return (
 
     <div>
