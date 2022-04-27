@@ -88,7 +88,7 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
-                <label for = "chosenClass">Essay</label>
+                <label for = "essay">Essay</label>
                 <textarea 
                     maxlength="1000" 
                     rows="4"                       
