@@ -15,7 +15,7 @@ function Dashboard() {
     setUniversity(uniId)
 
     //redirect to /enroll page
-    window.location.href='/enroll'
+    navigate('/enroll')
   }
 
 
@@ -23,7 +23,8 @@ function Dashboard() {
   
   if(isAuthenticated){
 
-   navigate("/home")
+
+    navigate("/home")
   }
   return (
     <>

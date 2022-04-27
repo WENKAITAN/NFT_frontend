@@ -3,7 +3,9 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 import { MdAccountCircle, MdAnnouncement, MdSchool, MdAccountBox, MdTask, MdSchedule, MdOutlineAppRegistration, MdFiberSmartRecord, MdAttachMoney,MdPaid } from "react-icons/md";
 import {FaUserGraduate} from "react-icons/fa"
 import {CgTranscript} from "react-icons/cg"
+import { useNavigate} from 'react-router-dom'
 function StudentCenter() {
+  let navigate = useNavigate();
   return (
     <div>
         <h3>Student Center</h3>
@@ -98,7 +100,7 @@ function StudentCenter() {
                     </Card>
                 </Col>
                 <Col sm={6} md={4} lg={3} style={{marginTop:"10px"}}>
-                    <Card onClick={()=> window.location.href='/'}>
+                    <Card onClick={()=> navigate('/')}>
                         <Card.Body>
                         <Card.Title>Apply to MetaUniversity</Card.Title>
                         <MdSchool size={70}/>
