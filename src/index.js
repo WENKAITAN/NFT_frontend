@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-// Emmanuel 03-26-2022 Added SemanticUI framework
-// import 'semantic-ui-css/semantic.min.css';  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0Provider
+  domain="tancoffee.us.auth0.com"
+  clientId="hdH6UjNDobsjZ1DQaZIAXyDNoXZp2RZP"
+  redirectUri={window.location.origin}
+>
     <App />
-  </React.StrictMode>,
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
