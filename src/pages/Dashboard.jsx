@@ -14,14 +14,14 @@ function Dashboard() {
     setUniversity(uniId)
 
     //redirect to /enroll page
-    window.location.href='/enroll'
+    navigate('/enroll')
   }
 
   const { isAuthenticated } = useAuth0();
   
   if(isAuthenticated){
 
-    window.location.href='/home'
+    navigate("/home")
   }
   return (
     <>
