@@ -1,41 +1,45 @@
 import React from 'react'
-
+import { Container, Row, Col, Card } from 'react-bootstrap'
+import { MdAccountCircle, MdAnnouncement, MdSchool } from "react-icons/md";
 function Main() {
-  
+  const myStyle = {
+  }
   return (
-    <div>Main
-      <div id='content'>
-        <span id='text1'>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-           mollit anim id est laborummmm.
-          </p>
-        </span>
-        <span>
-          image1
-        </span>
-        <span>
-          image2
-        </span>
-        <span id='text2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-           mollit anim id est laborum.
-        </span>
-      </div>
+
+    <div>
+        <Container>
+          <Row >
+            <Col md={4} style={{marginTop:"10px"}}>
+              <Card onClick={()=> window.location.href='/studentcenter'}>
+                <Card.Body>
+                  <Card.Title>Student Center</Card.Title>
+                  <MdAccountCircle size={70}/>
+
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} style={{marginTop:"10px"}}>
+              <Card onClick={()=> window.location.href='/announcement'}>
+                <Card.Body>
+                  <Card.Title>Announcements</Card.Title>
+                  <MdAnnouncement size={70}/>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} style={{marginTop:"10px"}}>
+              <Card onClick={()=> window.location.href='/'}>
+                <Card.Body>
+                  <Card.Title>Apply To MetaUniversity</Card.Title>
+                  <MdSchool size={70}/>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+
+
+        </Container>
 
     </div>
-   
-
   )
 }
 

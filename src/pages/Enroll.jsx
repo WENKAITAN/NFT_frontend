@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { Button } from 'react-bootstrap';
 function Enroll() {
 
   const [formData, setFormData] = useState({
@@ -7,11 +7,10 @@ function Enroll() {
     middleName: '',
     lastName: '',
     email: '',
-    studentId: '',
-    chosenClass: ''
+    essay: '',
   })
 
-  const {firstName, middleName, lastName, email, studentId, chosenClass} = formData
+  const {firstName, middleName, lastName, email, essay} = formData
   const handleChange = (e) => {
     console.log(e.target, )
     setFormData({
@@ -89,28 +88,18 @@ function Enroll() {
                   />
               </div>
               <div className="form-group">
-              <label for = "studentId">Student ID</label>
-                  <input 
-                      type="text" 
-                      id="studentId" 
-                      name="studentId" 
-                      value={studentId} 
-                      className="form-control" 
-                      placeholder="Enter your student Id"
-                      onChange={handleChange}
-                  />
-              </div>
-              <div className="form-group">
-              <label for = "chosenClass">Choose Class</label>
-                  <input 
-                      type="text" 
-                      id="chosenClass" 
-                      name="chosenClass" 
-                      value={chosenClass} 
-                      className="form-control" 
-                      placeholder="Enter your class name"
-                      onChange={handleChange}
-                  />
+                <label for = "essay">Essay</label>
+                <textarea 
+                    maxlength="1000" 
+                    rows="4"                       
+                    type="text" 
+                    id="essay" 
+                    name="essay" 
+                    value={essay} 
+                    className="form-control" 
+                    placeholder="Enter your application essay"
+                    onChange={handleChange}>
+                </textarea>
               </div>
               <div>
                 <label for = "upfile">Upload file:</label><br/>
@@ -119,7 +108,7 @@ function Enroll() {
              </div>
              <br/> 
               <div className="form-group">
-                  <button type="submit" className='btn btn-block'>Submit</button>
+                  <Button type="submit" className='btn btn-block'>Submit</Button>
               </div>
           </form>
         </section>
