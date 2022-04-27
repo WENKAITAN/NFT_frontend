@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Icon, Image, Button } from 'semantic-ui-react'
-import "/home/emmanuel/Desktop/NFT_frontend-main/NFT_frontend/src/style/classesViewCard.css"
+import "/NFT_frontend-main/NFT_frontend/src/style/classesViewCard.css"
 
 function ClassSelection() {
   return (
@@ -17,7 +17,7 @@ const PhysicsClassCardView = () => (
     <div id="classCardContainer" style={{ margin: 20}}>
       <Card id="card">
       <img class="border bg-white p1 border-gray circle square-100 lazyload" 
-                        id="classImage"src={require("/home/emmanuel/Desktop/NFT_frontend-main/NFT_frontend/src/images/6b5590c781f1a1bfd84a13c0abd71029.jpg")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
+                        id="classImage"src={require("/NFT_frontend-main/NFT_frontend/src/images/6b5590c781f1a1bfd84a13c0abd71029.jpg")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
         <Card.Content id="cardContent">
           <Card.Header id="classHeadings"><h3>Physics Classes</h3></Card.Header>
           {/* <Card.Meta>
@@ -40,7 +40,7 @@ const MathClassCardView = () => (
   <div id="classCardContainer" style={{ margin: 20}}>
     <Card id="card">
     <img class="border bg-white p1 border-gray circle square-100 lazyload" 
-                      id="classImage"src={require("/home/emmanuel/Desktop/NFT_frontend-main/NFT_frontend/src/images/math.jpg")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
+                      id="classImage"src={require("NFT_frontend-main/NFT_frontend/src/images/math.jpg")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
       <Card.Content id="cardContent">
         <Card.Header id="classHeadings"><h3>Math Classes</h3></Card.Header>
         {/* <Card.Meta>
@@ -62,7 +62,7 @@ const EnglishClassCardView = () => (
   <div id="classCardContainer" style={{ margin: 20}}>
     <Card id="card">
     <img class="border bg-white p1 border-gray circle square-100 lazyload" 
-                      id="classImage"src={require("/home/emmanuel/Desktop/NFT_frontend-main/NFT_frontend/src/images/english.jpg")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
+                      id="classImage"src={require("NFT_frontend-main/NFT_frontend/src/images/english.jpg")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
       <Card.Content id="cardContent">
         <Card.Header id="classHeadings"><h3>English Classes</h3></Card.Header>
         {/* <Card.Meta>
@@ -84,7 +84,7 @@ const WrittingClassCardView = () => (
   <div id="classCardContainer" style={{ margin: 20}}>
     <Card id="card">
     <img class="border bg-white p1 border-gray circle square-100 lazyload" 
-                      id="classImage"src={require("/home/emmanuel/Desktop/NFT_frontend-main/NFT_frontend/src/images/writting.webp")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
+                      id="classImage"src={require("/NFT_frontend-main/NFT_frontend/src/images/writting.webp")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
       <Card.Content id="cardContent">
         <Card.Header id="classHeadings"><h3>Writting Classes</h3></Card.Header>
         {/* <Card.Meta>
@@ -106,7 +106,7 @@ const ChemistryClassCardView = () => (
   <div id="classCardContainer" style={{ margin: 20}}>
     <Card id="card">
     <img class="border bg-white p1 border-gray circle square-100 lazyload" 
-                      id="classImage"src={require("/home/emmanuel/Desktop/NFT_frontend-main/NFT_frontend/src/images/chemistry.webp")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
+                      id="classImage"src={require("/NFT_frontend-main/NFT_frontend/src/images/chemistry.webp")} /> {/**style={{width: 500, height: 300, borderRadius: 10}} */}
       <Card.Content id="cardContent">
         <Card.Header id="classHeadings"><h3>Chemistry Classes</h3></Card.Header>
         {/* <Card.Meta>
