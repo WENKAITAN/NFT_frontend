@@ -19,7 +19,7 @@ function Header() {
             {isAuthenticated && user  ? (
                 <>  
                     <Button variant="secondary" size="lg" style={{ marginLeft: "5px"}}><Link to="/studentcenter" style={{textDecoration: 'none', color: 'white'}}>student center</Link></Button>
-                    <Button variant="secondary" size="lg" style={{ marginLeft: "5px"}} onClick={()=> navigate('/Profile')}><MdAccountBox/></Button>
+                    <Button variant="secondary" size="lg"  onClick={()=> navigate('/Profile')}><MdAccountBox style={{ marginLeft: "5px"}}/></Button>
                     <LogoutButton/>
                 </>
             
