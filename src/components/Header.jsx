@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap'
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from './LogoutButton'
 import { MdAccountBox} from "react-icons/md";
-import { useNavigate} from 'react-router-dom'
+import { useNavigate, Link} from 'react-router-dom'
 function Header() {
   const { user, isAuthenticated } = useAuth0();
   const navigate = useNavigate()
@@ -17,7 +17,8 @@ function Header() {
         <ul>
 
             {isAuthenticated && user  ? (
-                <>
+                <>  
+                    <Link to="/studentcenter">student center</Link>
                     <Button variant="secondary" size="lg" onClick={()=> navigate('/Profile')}><MdAccountBox/></Button>
                     <LogoutButton/>
                 </>
