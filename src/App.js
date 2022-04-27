@@ -25,7 +25,7 @@ import RegisterClass from './pages/RegisterClass'
 import Tasks from './pages/Tasks'
 import Transcript from './pages/Transcript'
 import ScheduleBuilder from './pages/ScheduleBuilder'
-
+import ClassSelection from './pages/ClassSelection'
 function App() {
   
   return (
@@ -40,8 +40,7 @@ function App() {
               <Route path="home" element={<Main />} />
               <Route path="grade" element={<Grade />} />
               <Route path="announcement" element={<AnnouncementDetail />} />
-              <Route path="course" element={<CourseDetail />} />
-              <Route path='register' element={<Register/>} />
+              <Route path='register' element={<ClassSelection/>} />
               
               <Route path='create' element={<ClassForm/>} />
               <Route path='studentcenter'  element={<StudentCenter/>} />
