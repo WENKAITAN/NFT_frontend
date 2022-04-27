@@ -1,10 +1,11 @@
 import React from 'react'
-import { Card, Icon, Image, Button } from 'semantic-ui-react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 import img1 from '../images/6b5590c781f1a1bfd84a13c0abd71029.jpg'
 import img2 from '../images/math.jpg'
 import english from '../images/english.jpg'
 import writing from '../images/writting.webp'
 import chemistry from '../images/chemistry.webp'
+import { Button } from 'react-bootstrap'
 function ClassSelection() {
   return (
     <div>
@@ -55,7 +56,7 @@ const MathClassCardView = () => (
           </p>
         </Card.Description>
         <Card.Content extra id="buttonContainer">
-          <Button class="selectButton" basic color="greenyellow">Select</Button>
+          <Button>Select</Button>
       </Card.Content>
       </Card.Content>
     </Card>
@@ -77,7 +78,7 @@ const EnglishClassCardView = () => (
           </p>
         </Card.Description>
         <Card.Content extra id="buttonContainer">
-          <Button class="selectButton" basic color="greenyellow">Select</Button>
+          <Button >Select</Button>
       </Card.Content>
       </Card.Content>
     </Card>
@@ -99,7 +100,7 @@ const WrittingClassCardView = () => (
           </p>
         </Card.Description>
         <Card.Content extra id="buttonContainer">
-          <Button class="selectButton" basic color="greenyellow">Select</Button>
+          <Button>Select</Button>
       </Card.Content>
       </Card.Content>
     </Card>
@@ -121,7 +122,7 @@ const ChemistryClassCardView = () => (
           </p>
         </Card.Description>
         <Card.Content extra id="buttonContainer">
-          <Button class="selectButton" basic color="greenyellow">Select</Button>
+          <Button>Select</Button>
       </Card.Content>
       </Card.Content>
     </Card>
