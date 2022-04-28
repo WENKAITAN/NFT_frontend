@@ -113,7 +113,7 @@ function Enroll() {
                   />
               </div>
               <div>
-                <label for = "upfile">Upload file:</label><br/>
+                <label for = "upfile">Upload essay file:</label><br/>
                 <input type="file" id="upfile" name="upfile"></input>
                 
              </div>

@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import '../index.css';
 function Dashboard() {
 
-    const[announcements, setAnnouncements] = useState({
+  /*  const[announcements, setAnnouncements] = useState({
       announcements: '',
       courses:''
     })

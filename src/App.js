@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard'
 import Grade from './pages/Grade'
 import AnnouncementDetail from './pages/AnnouncementDetail'
 import CourseDetail from './pages/CourseDetail'
+import Profile from './pages/Profile'
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
             <Route path='/register' element={<Register/>} />
             <Route path='/enroll' element={<Enroll/>} />
             <Route path='/create' element={<ClassForm/>} />
+            <Route path='/Profile' element={<Profile/>}/>
           </Routes>
           </div>
       </Router>
